@@ -1,0 +1,54 @@
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<style>
+  .green {
+  background-color: #007bfe; /* Green */
+  border: none;
+  color: white;
+  padding: 10px 27px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+    border-radius:10px;
+}
+  
+  .control-group {
+   min-width:90%; 
+  }
+  
+  textarea:focus, input:focus {
+    color: white;
+}
+
+input:focus{
+    color: #f00;
+}
+</style>
+<div style = "background-color:black;">
+<div style = "background-color:black;" class="col-md-10 col-lg-8 mx-auto">
+    <p style = "color:white;">Want to get in touch? Unfortunately you cannot get in touch with Swivro directly, but you can get in touch with one of our brands or divisions.</p>
+    <strong><i style = "color:white;">Your message will be forwarded to the concerned brand or division of Swivro. If you are reporting an issue or have a complaint regarding one of our divisions or brands, your message will also be forwarded to them.</i></strong><br><br>
+  
+        <form id="contactForm" action="https://formsubmit.co/dcdda870c5d3ea731e3de21ddd863698" method="POST">
+        <div class="control-group">
+            <div class="form-floating controls mb-3"><input style = "background-color:black; color:white;" class="form-control" type="text" name="name" required placeholder="Name" /><label class="form-label" for="name"><a style = "color:white;">Name</a></label><small class="form-text text-danger help-block"></small></div>
+        </div>
+        <div class="control-group">
+            <div class="form-floating controls mb-3"><input style = "background-color:black; color:white;" class="form-control" type="email" name="email" required placeholder="Email Address" /><label class="form-label"><a style = "color:white;">Email Address</a></label><small class="form-text text-danger help-block"></small></div>
+        </div>
+             <div class="control-group">
+            <div class="form-floating controls mb-3"><input style = "background-color:black; color:white;" class="form-control" type="text" name="brand" required placeholder="Email Address" /><label class="form-label"><a style = "color:white;">Concerned Swivro Brand/Division</a></label><small class="form-text text-danger help-block"></small></div>
+        </div>
+        <div class="control-group">
+          
+        </div>
+        <div class="control-group">
+            <div class="form-floating controls mb-3"><textarea  name = "textarea" class="form-control" id="message" data-validation-required-message="Please enter a message." required placeholder="Message" style="height: 150px; background-color:black; color:white;"></textarea><label class="form-label"><a style = "color:white;">Message</a></label><small class="form-text text-danger help-block"></small></div>
+        </div>
+        <div id="success"></div>
+        <div class="mb-3"><button class="btn btn-primary btn-lg" id="sendMessageButton" type="submit">Send</button></div>
+          <br>
+    </form>
+</div>
+</div>
